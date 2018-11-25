@@ -1,0 +1,498 @@
+
+filename is span6.in 
+W == 200 
+sizeof(node) == 28 
+
+There should be 6 items in file 'span6.in' 
+
+There were 6 items in file 'span6.in' 
+
+AFTER SORTING:
+ NodeArray Elements: (size == 6)
+  1.         Blake:  level  0 ; bound ==    0.000 ; profit ==    614 ; weight ==     56 ; pw ==  10.964 
+  2.         Keats:  level  0 ; bound ==    0.000 ; profit ==    517 ; weight ==     49 ; pw ==  10.551 
+  3.        Milton:  level  0 ; bound ==    0.000 ; profit ==   1082 ; weight ==    108 ; pw ==  10.019 
+  4.         Donne:  level  0 ; bound ==    0.000 ; profit ==    724 ; weight ==     76 ; pw ==   9.526 
+  5.       Marvell:  level  0 ; bound ==    0.000 ; profit ==   1233 ; weight ==    144 ; pw ==   8.563 
+  6.          Pope:  level  0 ; bound ==    0.000 ; profit ==    727 ; weight ==     99 ; pw ==   7.343 
+
+         root:  level -1 ; bound == 2082.759 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+GetNode(): MemCount == 0 
+ copyNode():          root:  level -1 ; bound == 2082.759 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ insertNode():          root:  level -1 ; bound == 2082.759 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ Queue Elements: (size == 1)
+1.          root:  level -1 ; bound == 2082.759 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+START WHILE LOOP... 
+
+
+ removeNode():          root:  level -1 ; bound == 2082.759 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ copyNode():          root:  level -1 ; bound == 2082.759 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 1
+BFS( v ):          root:  level -1 ; bound == 2082.759 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+v.bound == 2082.759 
+
+BFS( u ):    root&Blake:  level  0 ; bound == -107374176.000 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+BFS(0): maxprofit now == 614 
+	 current best items are root&Blake 
+	 current weight of items is 56 
+
+GetNode(): MemCount == 0 
+ copyNode():    root&Blake:  level  0 ; bound == 2082.759 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ insertNode():    root&Blake:  level  0 ; bound == 2082.759 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+GetNode(): MemCount == 1 
+ copyNode():         root-:  level  0 ; bound == 2008.632 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ insertNode():         root-:  level  0 ; bound == 2008.632 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ i == 1 
+
+
+ removeNode():    root&Blake:  level  0 ; bound == 2082.759 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ copyNode():    root&Blake:  level  0 ; bound == 2082.759 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 2
+BFS( v ):    root&Blake:  level  0 ; bound == 2082.759 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+v.bound == 2082.759 
+
+BFS( u ): root&Blake&Keats:  level  1 ; bound == 2008.632 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+BFS(1): maxprofit now == 1131 
+	 current best items are root&Blake&Keats 
+	 current weight of items is 105 
+
+GetNode(): MemCount == 1 
+ copyNode(): root&Blake&Keats:  level  1 ; bound == 2082.759 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ insertNode(): root&Blake&Keats:  level  1 ; bound == 2082.759 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+GetNode(): MemCount == 2 
+ copyNode():   root&Blake-:  level  1 ; bound == 2038.947 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ insertNode():   root&Blake-:  level  1 ; bound == 2038.947 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ i == 2 
+
+
+ removeNode(): root&Blake&Keats:  level  1 ; bound == 2082.759 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ copyNode(): root&Blake&Keats:  level  1 ; bound == 2082.759 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 3
+BFS( v ): root&Blake&Keats:  level  1 ; bound == 2082.759 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+v.bound == 2082.759 
+
+BFS( u ): root&Blake&Keats&Milton:  level  2 ; bound == 2038.947 ; profit ==   2213 ; weight ==    213 ; pw ==   0.000 
+
+GetNode(): MemCount == 2 
+ copyNode(): root&Blake&Keats-:  level  2 ; bound == 2017.688 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ insertNode(): root&Blake&Keats-:  level  2 ; bound == 2017.688 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ i == 3 
+
+
+ removeNode():   root&Blake-:  level  1 ; bound == 2038.947 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ copyNode():   root&Blake-:  level  1 ; bound == 2038.947 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 3
+BFS( v ):   root&Blake-:  level  1 ; bound == 2038.947 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+v.bound == 2038.947 
+
+BFS( u ): root&Blake-&Milton:  level  2 ; bound == 2017.688 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+BFS(3): maxprofit now == 1696 
+	 current best items are root&Blake-&Milton 
+	 current weight of items is 164 
+
+GetNode(): MemCount == 2 
+ copyNode(): root&Blake-&Milton:  level  2 ; bound == 2038.947 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ insertNode(): root&Blake-&Milton:  level  2 ; bound == 2038.947 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+GetNode(): MemCount == 3 
+ copyNode():  root&Blake--:  level  2 ; bound == 1920.250 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ insertNode():  root&Blake--:  level  2 ; bound == 1920.250 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ i == 4 
+
+
+ removeNode(): root&Blake-&Milton:  level  2 ; bound == 2038.947 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ copyNode(): root&Blake-&Milton:  level  2 ; bound == 2038.947 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 4
+BFS( v ): root&Blake-&Milton:  level  2 ; bound == 2038.947 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+v.bound == 2038.947 
+
+BFS( u ): root&Blake-&Milton&Donne:  level  3 ; bound == 1920.250 ; profit ==   2420 ; weight ==    240 ; pw ==   0.000 
+
+GetNode(): MemCount == 3 
+ copyNode(): root&Blake-&Milton-:  level  3 ; bound == 2004.250 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ insertNode(): root&Blake-&Milton-:  level  3 ; bound == 2004.250 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ i == 5 
+
+
+ removeNode(): root&Blake&Keats-:  level  2 ; bound == 2017.688 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ copyNode(): root&Blake&Keats-:  level  2 ; bound == 2017.688 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 4
+BFS( v ): root&Blake&Keats-:  level  2 ; bound == 2017.688 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+v.bound == 2017.688 
+
+BFS( u ): root&Blake&Keats-&Donne:  level  3 ; bound == 2004.250 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+
+BFS(5): maxprofit now == 1855 
+	 current best items are root&Blake&Keats-&Donne 
+	 current weight of items is 181 
+
+GetNode(): MemCount == 3 
+ copyNode(): root&Blake&Keats-&Donne:  level  3 ; bound == 2017.688 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+
+ insertNode(): root&Blake&Keats-&Donne:  level  3 ; bound == 2017.688 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+
+GetNode(): MemCount == 4 
+ copyNode(): root&Blake&Keats--:  level  3 ; bound == 1944.438 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ insertNode(): root&Blake&Keats--:  level  3 ; bound == 1944.438 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ i == 6 
+
+
+ removeNode(): root&Blake&Keats-&Donne:  level  3 ; bound == 2017.688 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+
+ copyNode(): root&Blake&Keats-&Donne:  level  3 ; bound == 2017.688 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 5
+BFS( v ): root&Blake&Keats-&Donne:  level  3 ; bound == 2017.688 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+v.bound == 2017.688 
+
+BFS( u ): root&Blake&Keats-&Donne&Marvell:  level  4 ; bound == 1944.438 ; profit ==   3088 ; weight ==    325 ; pw ==   0.000 
+
+GetNode(): MemCount == 4 
+ copyNode(): root&Blake&Keats-&Donne-:  level  4 ; bound == 1994.525 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+
+ insertNode(): root&Blake&Keats-&Donne-:  level  4 ; bound == 1994.525 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+
+ i == 7 
+
+
+ removeNode():         root-:  level  0 ; bound == 2008.632 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ copyNode():         root-:  level  0 ; bound == 2008.632 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 5
+BFS( v ):         root-:  level  0 ; bound == 2008.632 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+v.bound == 2008.632 
+
+BFS( u ):   root-&Keats:  level  1 ; bound == 1994.525 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+
+GetNode(): MemCount == 4 
+ copyNode():   root-&Keats:  level  1 ; bound == 2008.632 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+
+ insertNode():   root-&Keats:  level  1 ; bound == 2008.632 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+
+GetNode(): MemCount == 5 
+ copyNode():        root--:  level  1 ; bound == 1943.000 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ insertNode():        root--:  level  1 ; bound == 1943.000 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ i == 8 
+
+
+ removeNode():   root-&Keats:  level  1 ; bound == 2008.632 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+
+ copyNode():   root-&Keats:  level  1 ; bound == 2008.632 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 6
+BFS( v ):   root-&Keats:  level  1 ; bound == 2008.632 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+v.bound == 2008.632 
+
+BFS( u ): root-&Keats&Milton:  level  2 ; bound == 1943.000 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+GetNode(): MemCount == 5 
+ copyNode(): root-&Keats&Milton:  level  2 ; bound == 2008.632 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ insertNode(): root-&Keats&Milton:  level  2 ; bound == 2008.632 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+GetNode(): MemCount == 6 
+ copyNode():  root-&Keats-:  level  2 ; bound == 1883.188 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+
+ insertNode():  root-&Keats-:  level  2 ; bound == 1883.188 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+
+ i == 9 
+
+
+ removeNode(): root-&Keats&Milton:  level  2 ; bound == 2008.632 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ copyNode(): root-&Keats&Milton:  level  2 ; bound == 2008.632 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 7
+BFS( v ): root-&Keats&Milton:  level  2 ; bound == 2008.632 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+v.bound == 2008.632 
+
+BFS( u ): root-&Keats&Milton&Donne:  level  3 ; bound == 1883.188 ; profit ==   2323 ; weight ==    233 ; pw ==   0.000 
+
+GetNode(): MemCount == 6 
+ copyNode(): root-&Keats&Milton-:  level  3 ; bound == 1967.188 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ insertNode(): root-&Keats&Milton-:  level  3 ; bound == 1967.188 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ i == 10 
+
+
+ removeNode(): root&Blake-&Milton-:  level  3 ; bound == 2004.250 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ copyNode(): root&Blake-&Milton-:  level  3 ; bound == 2004.250 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 7
+BFS( v ): root&Blake-&Milton-:  level  3 ; bound == 2004.250 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+v.bound == 2004.250 
+
+BFS( u ): root&Blake-&Milton-&Marvell:  level  4 ; bound == 1967.188 ; profit ==   2929 ; weight ==    308 ; pw ==   0.000 
+
+GetNode(): MemCount == 6 
+ copyNode(): root&Blake-&Milton--:  level  4 ; bound == 1960.364 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ insertNode(): root&Blake-&Milton--:  level  4 ; bound == 1960.364 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ i == 11 
+
+
+ removeNode(): root&Blake&Keats-&Donne-:  level  4 ; bound == 1994.525 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+
+ copyNode(): root&Blake&Keats-&Donne-:  level  4 ; bound == 1994.525 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 7
+BFS( v ): root&Blake&Keats-&Donne-:  level  4 ; bound == 1994.525 ; profit ==   1855 ; weight ==    181 ; pw ==   0.000 
+v.bound == 1994.525 
+
+BFS( u ): root&Blake&Keats-&Donne-&Pope:  level  5 ; bound == 1960.364 ; profit ==   2582 ; weight ==    280 ; pw ==   0.000 
+
+ i == 12 
+
+
+ removeNode(): root-&Keats&Milton-:  level  3 ; bound == 1967.188 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ copyNode(): root-&Keats&Milton-:  level  3 ; bound == 1967.188 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 6
+BFS( v ): root-&Keats&Milton-:  level  3 ; bound == 1967.188 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+v.bound == 1967.188 
+
+BFS( u ): root-&Keats&Milton-&Marvell:  level  4 ; bound == 1855.000 ; profit ==   2832 ; weight ==    301 ; pw ==   0.000 
+
+GetNode(): MemCount == 5 
+ copyNode(): root-&Keats&Milton--:  level  4 ; bound == 1914.768 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ insertNode(): root-&Keats&Milton--:  level  4 ; bound == 1914.768 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ i == 13 
+
+
+ removeNode(): root&Blake-&Milton--:  level  4 ; bound == 1960.364 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ copyNode(): root&Blake-&Milton--:  level  4 ; bound == 1960.364 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 6
+BFS( v ): root&Blake-&Milton--:  level  4 ; bound == 1960.364 ; profit ==   1696 ; weight ==    164 ; pw ==   0.000 
+v.bound == 1960.364 
+
+BFS( u ): root&Blake-&Milton--&Pope:  level  5 ; bound == 1914.768 ; profit ==   2423 ; weight ==    263 ; pw ==   0.000 
+
+ i == 14 
+
+
+ removeNode(): root&Blake&Keats--:  level  3 ; bound == 1944.438 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ copyNode(): root&Blake&Keats--:  level  3 ; bound == 1944.438 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 5
+BFS( v ): root&Blake&Keats--:  level  3 ; bound == 1944.438 ; profit ==   1131 ; weight ==    105 ; pw ==   0.000 
+v.bound == 1944.438 
+
+BFS( u ): root&Blake&Keats--&Marvell:  level  4 ; bound == 1696.000 ; profit ==   2364 ; weight ==    249 ; pw ==   0.000 
+
+ i == 15 
+
+
+ removeNode():        root--:  level  1 ; bound == 1943.000 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ copyNode():        root--:  level  1 ; bound == 1943.000 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 4
+BFS( v ):        root--:  level  1 ; bound == 1943.000 ; profit ==      0 ; weight ==      0 ; pw ==   0.000 
+v.bound == 1943.000 
+
+BFS( u ): root--&Milton:  level  2 ; bound == 1828.626 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+
+GetNode(): MemCount == 3 
+ copyNode(): root--&Milton:  level  2 ; bound == 1943.000 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+
+ insertNode(): root--&Milton:  level  2 ; bound == 1943.000 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+
+ i == 16 
+
+
+ removeNode(): root--&Milton:  level  2 ; bound == 1943.000 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+
+ copyNode(): root--&Milton:  level  2 ; bound == 1943.000 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 4
+BFS( v ): root--&Milton:  level  2 ; bound == 1943.000 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+v.bound == 1943.000 
+
+BFS( u ): root--&Milton&Donne:  level  3 ; bound == 1785.750 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+
+GetNode(): MemCount == 3 
+ copyNode(): root--&Milton&Donne:  level  3 ; bound == 1943.000 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+
+ insertNode(): root--&Milton&Donne:  level  3 ; bound == 1943.000 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+
+GetNode(): MemCount == 4 
+ copyNode(): root--&Milton-:  level  3 ; bound == 1869.750 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+
+ insertNode(): root--&Milton-:  level  3 ; bound == 1869.750 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+
+ i == 17 
+
+
+ removeNode(): root--&Milton&Donne:  level  3 ; bound == 1943.000 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+
+ copyNode(): root--&Milton&Donne:  level  3 ; bound == 1943.000 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 5
+BFS( v ): root--&Milton&Donne:  level  3 ; bound == 1943.000 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+v.bound == 1943.000 
+
+BFS( u ): root--&Milton&Donne&Marvell:  level  4 ; bound == 1869.750 ; profit ==   3039 ; weight ==    328 ; pw ==   0.000 
+
+GetNode(): MemCount == 4 
+ copyNode(): root--&Milton&Donne-:  level  4 ; bound == 1923.495 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+
+ insertNode(): root--&Milton&Donne-:  level  4 ; bound == 1923.495 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+
+ i == 18 
+
+
+ removeNode(): root--&Milton&Donne-:  level  4 ; bound == 1923.495 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+
+ copyNode(): root--&Milton&Donne-:  level  4 ; bound == 1923.495 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 5
+BFS( v ): root--&Milton&Donne-:  level  4 ; bound == 1923.495 ; profit ==   1806 ; weight ==    184 ; pw ==   0.000 
+v.bound == 1923.495 
+
+BFS( u ): root--&Milton&Donne-&Pope:  level  5 ; bound == 1923.495 ; profit ==   2533 ; weight ==    283 ; pw ==   0.000 
+
+ i == 19 
+
+
+ removeNode():  root&Blake--:  level  2 ; bound == 1920.250 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ copyNode():  root&Blake--:  level  2 ; bound == 1920.250 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 4
+BFS( v ):  root&Blake--:  level  2 ; bound == 1920.250 ; profit ==    614 ; weight ==     56 ; pw ==   0.000 
+v.bound == 1920.250 
+
+BFS( u ): root&Blake--&Donne:  level  3 ; bound == 1806.000 ; profit ==   1338 ; weight ==    132 ; pw ==   0.000 
+
+GetNode(): MemCount == 3 
+ copyNode(): root&Blake--&Donne:  level  3 ; bound == 1920.250 ; profit ==   1338 ; weight ==    132 ; pw ==   0.000 
+
+ insertNode(): root&Blake--&Donne:  level  3 ; bound == 1920.250 ; profit ==   1338 ; weight ==    132 ; pw ==   0.000 
+
+ i == 20 
+
+
+ removeNode(): root&Blake--&Donne:  level  3 ; bound == 1920.250 ; profit ==   1338 ; weight ==    132 ; pw ==   0.000 
+
+ copyNode(): root&Blake--&Donne:  level  3 ; bound == 1920.250 ; profit ==   1338 ; weight ==    132 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 4
+BFS( v ): root&Blake--&Donne:  level  3 ; bound == 1920.250 ; profit ==   1338 ; weight ==    132 ; pw ==   0.000 
+v.bound == 1920.250 
+
+BFS( u ): root&Blake--&Donne&Marvell:  level  4 ; bound == 1847.000 ; profit ==   2571 ; weight ==    276 ; pw ==   0.000 
+
+ i == 21 
+
+
+ removeNode(): root-&Keats&Milton--:  level  4 ; bound == 1914.768 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ copyNode(): root-&Keats&Milton--:  level  4 ; bound == 1914.768 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 3
+BFS( v ): root-&Keats&Milton--:  level  4 ; bound == 1914.768 ; profit ==   1599 ; weight ==    157 ; pw ==   0.000 
+v.bound == 1914.768 
+
+BFS( u ): root-&Keats&Milton--&Pope:  level  5 ; bound == 1837.354 ; profit ==   2326 ; weight ==    256 ; pw ==   0.000 
+
+ i == 22 
+
+
+ removeNode():  root-&Keats-:  level  2 ; bound == 1883.188 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+
+ copyNode():  root-&Keats-:  level  2 ; bound == 1883.188 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 2
+BFS( v ):  root-&Keats-:  level  2 ; bound == 1883.188 ; profit ==    517 ; weight ==     49 ; pw ==   0.000 
+v.bound == 1883.188 
+
+BFS( u ): root-&Keats-&Donne:  level  3 ; bound == 1599.000 ; profit ==   1241 ; weight ==    125 ; pw ==   0.000 
+
+GetNode(): MemCount == 1 
+ copyNode(): root-&Keats-&Donne:  level  3 ; bound == 1883.188 ; profit ==   1241 ; weight ==    125 ; pw ==   0.000 
+
+ insertNode(): root-&Keats-&Donne:  level  3 ; bound == 1883.188 ; profit ==   1241 ; weight ==    125 ; pw ==   0.000 
+
+ i == 23 
+
+
+ removeNode(): root-&Keats-&Donne:  level  3 ; bound == 1883.188 ; profit ==   1241 ; weight ==    125 ; pw ==   0.000 
+
+ copyNode(): root-&Keats-&Donne:  level  3 ; bound == 1883.188 ; profit ==   1241 ; weight ==    125 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 2
+BFS( v ): root-&Keats-&Donne:  level  3 ; bound == 1883.188 ; profit ==   1241 ; weight ==    125 ; pw ==   0.000 
+v.bound == 1883.188 
+
+BFS( u ): root-&Keats-&Donne&Marvell:  level  4 ; bound == 1801.404 ; profit ==   2474 ; weight ==    269 ; pw ==   0.000 
+
+ i == 24 
+
+
+ removeNode(): root--&Milton-:  level  3 ; bound == 1869.750 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+
+ copyNode(): root--&Milton-:  level  3 ; bound == 1869.750 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+
+ ReturnNode(): MemCount == 1
+BFS( v ): root--&Milton-:  level  3 ; bound == 1869.750 ; profit ==   1082 ; weight ==    108 ; pw ==   0.000 
+v.bound == 1869.750 
+
+BFS( u ): root--&Milton-&Marvell:  level  4 ; bound == 1791.758 ; profit ==   2315 ; weight ==    252 ; pw ==   0.000 
+
+ i == 25 
+
+Queue is Empty
+Max MemCount == 7 
+
+For Weight limit 200: Max Profit == 1855 (actual weight == 181)
+Best items are: root&Blake&Keats-&Donne 
+
+ PROGRAM ENDED.
